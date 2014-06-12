@@ -22,4 +22,3 @@ def deploy():
 
 
     run("source /var/django/eve-industrial/env/bin/activate && /var/django/eve-industrial/industrial/run.sh")
-    # run("source /var/django/eve-industrial/env/bin/activate && /var/django/eve-industrial/industrial/run.sh")
