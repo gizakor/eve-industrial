@@ -22,4 +22,4 @@ def deploy():
 
     with lcd('/var/django/eve-industrial/industrial'):
         run("pwd")
-        run("cd /var/django/eve-industrial/industrial   && source /var/django/eve-industrial/env/bin/activate &&  ./run.sh && pwd")
+        run("cd /var/django/eve-industrial/industrial&& source /var/django/eve-industrial/env/bin/activate &&  ./run.sh")
