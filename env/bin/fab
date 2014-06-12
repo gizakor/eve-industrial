@@ -1,4 +1,4 @@
-#!/home/gizakor/deadlands/projects/industrial/env/bin/python
+#!/var/django/eve-industrial/env/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'Fabric==1.9.0','console_scripts','fab'
 __requires__ = 'Fabric==1.9.0'
 import sys

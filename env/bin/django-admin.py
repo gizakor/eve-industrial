@@ -1,4 +1,4 @@
-#!/home/gizakor/deadlands/projects/industrial/env/bin/python
+#!/var/django/eve-industrial/env/bin/python
 from django.core import management
 
 if __name__ == "__main__":
