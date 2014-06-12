@@ -14,17 +14,7 @@ def deploy():
     	pass
     local('git pull')
     local('git push')
-    # with lcd('/var/django/eve-industrial/industrial/industrial/'):
-    #     # with prefix('workon env'):
-    #     # with prefix("/var/django/eve-industrial/industrial/industrial; workon env"):
-    #     run('pwd')
     run('cd /var/django/eve-industrial/ && git pull --no-edit')
-        #     local('python manage.py migrate industrialweb')
-            #local('python manage.py test myapp')
-
-    with lcd('/var/django/eve-industrial/industrial'):
-        run("pwd")
-        #run("cd /var/django/eve-industrial/industrial&& source /var/django/eve-industrial/env/bin/activate &&  ./run.sh ")
     try:
         run('killall gunicorn')
     except:
