@@ -20,5 +20,5 @@ def deploy():
         #     local('python manage.py migrate industrialweb')
             #local('python manage.py test myapp')
 
-    with lcd('/var/django/eve-industrial/industrial/'):
-        run("source /var/django/eve-industrial/env/bin/activate && cd /var/django/eve-industrial/industrial &&  ./run.sh")
+    with lcd('/var/django/eve-industrial/industrial'):
+        run("source /var/django/eve-industrial/env/bin/activate &&  ./run.sh")
