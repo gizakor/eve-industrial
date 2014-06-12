@@ -6,6 +6,9 @@ def prepare_deployment(branch_name):
 
 
 def deploy():
+    local('git commit -a ')
+    local('git pull')
+    local('git push')
     with lcd('/var/django/eve-industrial/industrial/industrial/'):
         # with prefix('workon env'):
         # with prefix("/var/django/eve-industrial/industrial/industrial; workon env"):
