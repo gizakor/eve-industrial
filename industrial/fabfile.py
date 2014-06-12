@@ -21,4 +21,5 @@ def deploy():
             #local('python manage.py test myapp')
 
     with lcd('/var/django/eve-industrial/industrial'):
+        run("pwd")
         run("source /var/django/eve-industrial/env/bin/activate &&  ./run.sh")
