@@ -6,7 +6,10 @@ def prepare_deployment(branch_name):
 
 
 def deploy():
-    local('git commit -a ')
+    try:
+    	local('git commit -a ')
+    except:
+    	pass
     local('git pull')
     local('git push')
     with lcd('/var/django/eve-industrial/industrial/industrial/'):
