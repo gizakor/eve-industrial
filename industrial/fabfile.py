@@ -25,4 +25,4 @@ def deploy():
     with lcd('/var/django/eve-industrial/industrial'):
         run("pwd")
         #run("cd /var/django/eve-industrial/industrial&& source /var/django/eve-industrial/env/bin/activate &&  ./run.sh ")
-    run("cd /var/django/eve-industrial/industrial&& /var/django/eve-industrial/env/bin/gunicorn --workers=4 --bind=0.0.0.0:9000 industrial.wsgi:application")
+    run("cd /var/django/eve-industrial/industrial&& /var/django/eve-industrial/env/bin/gunicorn --daemon --workers=4 --bind=0.0.0.0:9000 industrial.wsgi:application")
