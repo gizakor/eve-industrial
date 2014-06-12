@@ -16,7 +16,7 @@ def deploy():
     #     # with prefix('workon env'):
     #     # with prefix("/var/django/eve-industrial/industrial/industrial; workon env"):
     #     run('pwd')
-    run('cd /var/django/eve-industrial/ && git pull ')
+    run('cd /var/django/eve-industrial/ && git pull --no-edit')
         #     local('python manage.py migrate industrialweb')
             #local('python manage.py test myapp')
 
