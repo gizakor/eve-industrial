@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'industrialweb',
+    'gunicorn',
 )
 
 MIDDLEWARE_CLASSES = (
